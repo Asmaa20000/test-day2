@@ -24,7 +24,7 @@ namespace CarFactoryAPI_test
             ownerRepository = new OwnerRepository(factoryContextMock.Object);
         }
         [Fact]
-        [Trait("Author", "ahmed")]
+        [Trait("Author", "Asmaa")]
         [Trait("Priority", "9")]
 
         public void GetCarById_AskForCar10_ReturnCar()
