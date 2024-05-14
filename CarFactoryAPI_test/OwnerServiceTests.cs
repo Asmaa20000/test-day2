@@ -48,7 +48,7 @@ namespace CarFactoryAPI_test
             outputHelper.WriteLine("Test clean up");
         }
         [Fact]
-        [Trait("Author", "Ahmed")]
+        [Trait("Author", "Asmaa")]
 
         public void BuyCar_CarNotExist_NotExist() 
         {
@@ -78,7 +78,7 @@ namespace CarFactoryAPI_test
         }
 
         [Fact(Skip ="Working on solving error")]
-        [Trait("Author","Ahmed")]
+        [Trait("Author","Asmaa")]
         public void BuyCar_CarWithOwner_Sold()
         {
             outputHelper.WriteLine("Test 2");
@@ -107,7 +107,7 @@ namespace CarFactoryAPI_test
 
 
         [Fact]
-        [Trait("Author", "Ali")]
+        [Trait("Author", "Aliaa")]
         [Trait("Priority", "5")]
 
 
@@ -140,7 +140,7 @@ namespace CarFactoryAPI_test
         public void BuyCar_AlreadyHaveCar_NotExist()
         {
             // Arrange
-            Car car = new Car() { Id = 11, Owner = new Owner() { Id = 11, Name = "ahmed" } };
+            Car car = new Car() { Id = 11, Owner = new Owner() { Id = 11, Name = "Asmaa" } };
 
             carRepoMock.Setup(cm => cm.GetCarById(10)).Returns(car);
             ownersRepoMock.Setup(om => om.GetOwnerById(It.IsAny<int>())).Returns(car.Owner);
